@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch weather data from an API
     async function fetchWeather(city) {
         const apiKey = '7a0c4e6cf2366fa6420514ee12bf2e5f'; // Replace with your API key
-        const url = `http://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
+        const url = `https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`;
 
         try {
             const response = await fetch(url);
